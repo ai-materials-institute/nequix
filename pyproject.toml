@@ -12,6 +12,7 @@ license = { file = "LICENSE" }
 dependencies = [
     "jax[cuda12]>=0.4.34; sys_platform == 'linux'",
     "jax>=0.4.34; sys_platform == 'darwin'",
+    "mcp>=1.0.0",
     "e3nn-jax>=0.20.8",
     "jraph>=0.0.6.dev0",
     "equinox>=0.11.11",
