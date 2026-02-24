@@ -39,7 +39,7 @@ For stdio clients, use command in a separate terminal:
 
 Either add Nequix manually to your `config.toml` file, or:
 
-[Codex] `codex mcp add nequix -- \ uv --directory /Users/rohanshankar/Downloads/MCP-AIMI/nequix \ run python mcp/server.py --transport stdio `
+[Codex] `codex mcp add nequix -- \ uv --directory /<path-to-nequix-repo> \ run python mcp/server.py --transport stdio `
 
 
 
