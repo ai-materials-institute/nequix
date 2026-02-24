@@ -43,10 +43,22 @@ Either add Nequix manually to your `config.toml` file, or:
 
 
 
+## Example CIF for testing
+
+You can test the CIF tools for the mcp using this publicly available test file
+
+- `mcp/examples/9008566.cif`
+
+Source:
+
+- Crystallography Open Database (COD), entry `9008566`
+- `https://www.crystallography.net/cod/9008566.cif`
+
+
+
 ## Misc
 
 - The server prefers model files in `models/` in the repo
 - If a model file is missing locally, Nequix might download it from its configured URL.
 - For remote clients use `cif_text`, probably easier.
-
 
