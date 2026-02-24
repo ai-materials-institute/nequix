@@ -19,7 +19,7 @@ import numpy as np
 from ase.io import read as ase_read
 
 _THIS_DIR = Path(__file__).resolve().parent
-_REPO_ROOT = _THIS_DIR.parent.parent
+_REPO_ROOT = _THIS_DIR.parent
 _MODELS_DIR = _REPO_ROOT / "models"
 
 # Safety check to prevent local ./mcp folder from shadowing this mcp
@@ -91,6 +91,7 @@ class InferenceRuntime:
             _MODELS_DIR / f"{model_name}.nqx",
             _MODELS_DIR / f"{model_name}.pt",
         ]
+
         for candidate in model_candidates:
             if candidate.exists():
                 return candidate

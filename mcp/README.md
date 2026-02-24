@@ -31,9 +31,16 @@ Use streamable HTTP URL:
 
 - `http://127.0.0.1:8766`
 
-For stdio clients, use command:
+For stdio clients, use command in a separate terminal:
 
 - `uv --directory <path-to-nequix-repo> run python mcp/server.py --transport stdio`
+
+## Add Nequix to your MCP
+
+Either add Nequix manually to your `config.toml` file, or:
+
+[Codex] `codex mcp add nequix -- \ uv --directory /Users/rohanshankar/Downloads/MCP-AIMI/nequix \ run python mcp/server.py --transport stdio `
+
 
 
 ## Misc
@@ -41,3 +48,5 @@ For stdio clients, use command:
 - The server prefers model files in `models/` in the repo
 - If a model file is missing locally, Nequix might download it from its configured URL.
 - For remote clients use `cif_text`, probably easier.
+
+
